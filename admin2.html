@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" type="image/png" href="logo.jpg">
+        <title>CheckYourEvent</title>
+    </head>
+    <body>
+        <header>
+            <h1>Wydarzenia muzyczne w Twojej okolicy</h1>
+        </header>
+        <nav id="nawigacja">
+            <menu>
+                <li id="li1"><a href="projekt.html"><img src="homepage.png" alt="obrazek" id="img1">Strona główna</a></li>
+                <li><a href="onas.html">Kim jesteśmy?</a></li>
+                <li><a href="miasta.html">Miasta</a></li>
+                <li><a href="relacje.html">Relacje</a></li> 
+                <li><a href="kontakt.html">Kontakt</a></li> 
+                <li><a href="admin.html">Panel administratora</a></li>  
+            </menu>
+        </nav>
+        <main class = "main_zaloguj2">
+            <article class = "dodajusun">
+                <div class = "dodajwydarzenie">
+                    <h2>Dodaj wydarzenie</h2>
+	                <form>
+		                <label for="nazwa">Nazwa:</label>
+		                <input type="text" id="nazwa" name="nazwa"><br><br>
+
+                        <label for="nazwa">ID organizatora:</label>
+		                <input type="text" id="organizator" name="organizator"><br><br>
+		
+		                <label for="lokacja">ID lokacji:</label>
+		                <input type="text" id="lokacja" name="lokacja"><br><br>
+		
+		                <label for="data_roz">Data rozpoczęcia:</label>
+		                <input type="date" id="data_roz" name="data1"><br><br>
+		
+		                <label for="data_zak">Data zakończenia:</label>
+		                <input type="date" id="data_zak" name="data_zak"><br><br>
+
+                        <label for="data_dod">Data dodania:</label>
+		                <input type="date" id="data_dod" name="data_dod"><br><br>
+		
+		                <input type="submit" value="Dodaj"><br><br>
+	                </form>
+                    <hr>
+                    <h2>Lista wydarzeń</h2>
+	                <ul id="lista-wydarzen">
+		                <li>Wydarzenie 1 <input type="button" class="usun" name="usun" value="Usuń"></li>
+		                <li>Wydarzenie 2 <input type="button" class="usun" name="usun" value="Usuń"></li>
+		                <li>Wydarzenie 3 <input type="button" class="usun" name="usun" value="Usuń"></li>
+	                </ul>
+                </div>
+            </article>
+        </main>
+        <footer>
+            <p>2023 Check Your Event &copy;</p>
+        </footer>
+    </body>
+</html>

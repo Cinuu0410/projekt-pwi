@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" type="image/png" href="logo.jpg">
+        <title>CheckYourEvent</title>
+    </head>
+    <body>
+        <header>
+            <h1>Wydarzenia muzyczne w Twojej okolicy</h1>
+        </header>
+        <nav id="nawigacja">
+            <menu>
+                <li id="li1"><a href="projekt.html"><img src="homepage.png" alt="obrazek" id="img1">Strona główna</a></li>
+                <li><a href="onas.html">Kim jesteśmy?</a></li>
+                <li><a href="miasta.html">Miasta</a></li>
+                <li><a href="relacje.html">Relacje</a></li> 
+                <li><a href="kontakt.html">Kontakt</a></li> 
+                <li><a href="admin.html">Panel administratora</a></li>  
+            </menu>
+        </nav>
+        <main class="main_relacje">
+<div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="relacja1.jpg" style="width:100%" alt="obraz1">
+      <div class="text">Białystok</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="relacja2.jpg" style="width:100%" alt="obraz2">
+      <div class="text">Warszawa</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="relacja3.jpg" style="width:100%" alt="obraz3">
+      <div class="text">Gdańsk</div>
+    </div>
+  
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+        </main>
+        <footer>
+          <p>2023 Check Your Event &copy;</p>
+        </footer>
+
+        <script>
+          let slideIndex = 1;
+          showSlides(slideIndex);
+    
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+          
+          function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+          }
+    
+          </script> 
+    </body>
+
+    
+</html>

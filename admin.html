@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" type="image/png" href="logo.jpg">
+        <title>CheckYourEvent</title>
+    </head>
+    <body>
+        <header>
+            <h1>Wydarzenia muzyczne w Twojej okolicy</h1>
+        </header>
+        <nav id="nawigacja">
+            <menu>
+                <li id="li1"><a href="projekt.html"><img src="homepage.png" alt="obrazek" id="img1">Strona główna</a></li>
+                <li><a href="onas.html">Kim jesteśmy?</a></li>
+                <li><a href="miasta.html">Miasta</a></li>
+                <li><a href="relacje.html">Relacje</a></li> 
+                <li><a href="kontakt.html">Kontakt</a></li> 
+                <li><a href="admin.html">Panel administratora</a></li>  
+            </menu>
+        </nav>
+        <main class = "main_zaloguj">
+            <article class = "panel_logowania">
+                <div class = "teskt_logowanie">
+                    <h2>Panel logowania administratora</h2>
+                    <form method="POST" action="/login">
+                        <label for="username">Nazwa użytkownika</label>
+                        <input type="text" id="username" name="username" required>
+                        <label for="password">Hasło</label>
+                        <input type="password" id="password" name="password" required>
+                        <br>
+                        <input type="submit" value="Zaloguj się">
+                    </form>
+                    <div class="error">Wprowadź dane logowania</div>
+                </div>
+            </article>
+        </main>
+        <footer>
+            <p>2023 Check Your Event &copy;</p>
+        </footer>
+    </body>
+</html>

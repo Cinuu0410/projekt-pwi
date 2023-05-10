@@ -1,0 +1,357 @@
+body, html {
+    height: 100%;
+  }
+
+html{
+    background-image: url("tlo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+header h1{
+    padding: 10px;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-bottom: 0px;
+    color:white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+menu{
+    margin-top: 20px;
+    background-color:rgba(220,220,220, 0.5);
+}
+
+menu li
+{
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    width: 250px;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#img1{
+    width: 25px;
+    float: left;
+    padding-left: 40px;
+}
+
+#li1{
+    text-align: left;
+}
+
+main
+{
+    display: flex;
+    flex-direction: row;
+}
+
+main .lewa_strona
+{
+    background: rgba(220,220,220, 0.3);
+    padding-left: 10px;
+    width: 67%;
+}
+
+#naglowek2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+main .pasek
+{
+    position: relative;
+    display: flex;
+    width: 33%;
+}
+
+.pasek::before{
+    content: "";
+      background-image: url('que.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    background-size: 100%;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.5;
+      display: flex;
+}
+
+
+#par1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 110px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    color:white;
+    text-align: center;
+    font-size: 20px;
+}
+
+a:link{
+    color: white;
+    text-decoration: none;
+}
+
+a:visited{
+    color: white;
+}
+
+a:hover{
+    font-size: 25px;
+}
+
+.lewa_strona_onas{
+    background: rgba(220,220,220, 0.3);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+#osoba1img{
+    padding-bottom: 5px;
+    width: 25%;
+    float: left;
+}
+
+#osoba2img{
+    padding-bottom: 3px;
+    width: 25%;
+    float: right;
+}
+
+#par1_onas{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 60px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+
+.art1_miasta{
+    background: rgba(220,220,220, 0.3);
+    padding: 10px;
+}
+
+.art2_miasta{
+    background: rgba(220,220,220, 0.3);
+    padding: 10px;
+}
+
+.art1_miasta h2{
+    color:white;
+    width: 100%;
+    padding-left: 40px;
+}
+
+.main_miasta{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.art2_miasta ul li{
+    list-style-type: none;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.ikonki{
+    width: 25px;
+}
+
+.dane_kontakt{
+    background: rgba(220,220,220, 0.3);
+    padding: 10px;
+    width: 100%;
+}
+
+.tekst_kontakt{
+    color:white;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.main_kontakt{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  text-align: center;
+  font-size: larger;
+}
+
+
+#formularz{
+  color: white;
+  padding-bottom: 30px;
+}
+
+.main_zaloguj, .main_zaloguj2{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+  font-size: larger;
+}
+
+.panel_logowania, .dodajusun{
+    background: rgba(220,220,220, 0.3);
+    padding: 10px;
+}
+
+.main_zaloguj h1, h2, .dodajusun h2{
+  color: white;
+  padding-bottom: 5px;
+}
+.main_zaloguj label, .main_zaloguj2 label{
+        display: flex;
+        margin-bottom: 5px;
+        color: white;
+        flex-direction: column;
+}
+
+.dodajusun label{
+  color: white;
+}
+
+#lista-wydarzen li{
+  list-style-type: none;
+  color: white;
+}
+
+input[type="button"]{
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        background-color: #4CAF50;
+        color: white;
+        cursor: pointer;
+        border: none;
+}
+
+input[type="text"], input[type="password"], input[type="date"], input[type="email"] {
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover, input[type="button"]:hover {
+  background-color: #3e8e41;
+}
+
+.error {
+  color: rgb(250, 188, 188);
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
